@@ -77,7 +77,7 @@ with col1:
 
 with col2:
     # Black Cat (Noto Emoji)
-    st.image("https://openmoji.org/data/color/svg/1F408-200D-1F311.svg", width=100)
+    st.image("https://img.icons8.com/color/144/black-cat.png", width=100)
     st.subheader("Meemee")
     st.write("🐾 **Loweus: Cozy**")
     st.caption("Rating: 12/10. Claims your legs as her permanent snuggle territory. No movement allowed.")
