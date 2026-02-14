@@ -70,7 +70,7 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     # Orange Cat (Noto Emoji)
-    st.image("https://fonts.gstatic.com/s/e/notoemoji/latest/1f408_200d_1f080/512.png", width=100) 
+    st.image("https://fonts.gstatic.com/s/e/notoemoji/latest/1f408/512.png", width=100) 
     st.subheader("Pilli")
     st.write("🐾 **Loweus: Conditional**")
     st.caption("Rating: 7/10. You are technically the secondary human, but his Loweu spikes significantly whenever you're the one opening the wet food.")
