@@ -4,12 +4,19 @@ import random
 # --- CONFIG ---
 st.set_page_config(page_title="Loweu for Adithya", page_icon="❤️")
 
-# Custom CSS for a Valentine's vibe
+# Custom CSS for a Valentine's vibe and transparent pink metrics
 st.markdown("""
     <style>
     .main { background-color: #fffafb; }
     h1 { color: #e91e63; }
-    .stMetric { background-color: #ffebee; padding: 10px; border-radius: 10px; }
+    
+    /* Transparent pink hue for metrics */
+    [data-testid="stMetric"] {
+        background-color: rgba(255, 182, 193, 0.2); 
+        border: 1px solid rgba(233, 30, 99, 0.3);
+        padding: 15px;
+        border-radius: 15px;
+    }
     </style>
     """, unsafe_allow_html=True)
 
@@ -34,13 +41,11 @@ reasons = [
     "Our shared love for gaming and the chaotic after-game fights.",
     "The fact that you handle Pilli and Meemee like a pro.",
     "Your patience in always looking out for our future.",
-    "How we navigated the first year of parenthood together.",
-    "Simply because you're my favorite person to explore National Parks with.",
-    "The way you always find the best vegetarian spots for our date nights.",
-    "Being my partner-in-crime for every K-drama marathon.",
-    "How you support my AI/ML rabbit holes and 'A-Sync' brainstorms.",
-    "The way you make our home in Mountain View feel like the best place on earth.",
-    "Your 'Loweu' is the highlight of my every single day."
+    "How we navigated parenthood together.",
+    "Simply because you're my favorite person to explore national parks with.",
+    "How you somehow always know which vegetarian snack I'm craving.",
+    "The way you support my AI/ML ideas, even the wild ones.",
+    "Because you make every day in Mountain View feel like an adventure."
 ]
 
 if st.button("Generate a Reason"):
@@ -63,25 +68,25 @@ st.write("Measuring the levels of extreme love from your favorite housemates:")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    # Reliable Orange Cat Emoji
-    st.image("https://openmoji.org/data/color/svg/1F408-200D-1F080.svg", width=100) 
+    # Orange Cat SVG
+    st.image("https://www.svgrepo.com/show/404909/cat-face.svg", width=80) 
     st.subheader("Pilli")
-    st.write("🐾 **Loweus: MAX**")
-    st.caption("Rating: 11/10. Dad is the best pillow. Requests more salmon in exchange for extra Loweu.")
+    st.write("🐾 **Loweus: Conditional**")
+    st.caption("Rating: 7/10. You are technically the secondary human, but his Loweu spikes significantly whenever you're the one opening the wet food.")
 
 with col2:
-    # Reliable Black Cat Emoji
-    st.image("https://openmoji.org/data/color/svg/1F408-200D-1F311.svg", width=100)
+    # Black Cat SVG 
+    st.image("https://www.svgrepo.com/show/404910/cat-face.svg", width=80)
     st.subheader("Meemee")
-    st.write("🐾 **Loweus: Infinite**")
-    st.caption("Rating: 10/10. Even though I'm sleek and independent, I'll always scream for Dad's attention first.")
+    st.write("🐾 **Loweus: Cozy**")
+    st.caption("Rating: 12/10. Claims your legs as her permanent snuggle territory. No movement allowed.")
 
 with col3:
-    # Baby Emoji for Manya
-    st.image("https://openmoji.org/data/color/svg/1F476.svg", width=100)
+    # Baby/Manya SVG
+    st.image("https://www.svgrepo.com/show/404769/baby-medium-skin-tone.svg", width=80)
     st.subheader("Manya")
-    st.write("🍼 **Loweus: Beyond Measure**")
-    st.caption("Rating: 100/10. Best Appa ever. Loves your silly faces and the way you always keep me safe.")
+    st.write("🍼 **Loweus: Peak**")
+    st.caption("Rating: Infinite. Especially loves your various different 'Hi-Fi's' and thinks you're the coolest Appa.")
 
 st.divider()
 st.caption("Built with ❤️ by Sneha")
