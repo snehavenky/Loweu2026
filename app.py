@@ -20,7 +20,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("❤️ Happy Valentine's Day, Adithya!")
+st.title("❤️ Happy Valentine's Day!")
 st.subheader("A little something I built just for you.")
 
 # --- MEMORY SECTION ---
