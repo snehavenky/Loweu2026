@@ -46,7 +46,7 @@ reasons = [
     "How you somehow always know which vegetarian snack I'm craving.",
     "The way you support my AI/ML ideas, even the wild ones.",
     "Because you make every day in Mountain View feel like an adventure.",
-    "The fact that you appreciate my 'Loweu' and all our internal jokes."
+    "Your 'Loweu' is truly one of a kind."
 ]
 
 if st.button("Generate a Reason"):
@@ -69,22 +69,22 @@ st.write("Measuring the levels of extreme love from your favorite housemates:")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    # Cute Orange Cat
-    st.image("[attachment_0](attachment)", width=120) 
+    # Orange Cat (Noto Emoji)
+    st.image("https://fonts.gstatic.com/s/e/notoemoji/latest/1f408_200d_1f080/512.png", width=100) 
     st.subheader("Pilli")
     st.write("🐾 **Loweus: Conditional**")
     st.caption("Rating: 7/10. You are technically the secondary human, but his Loweu spikes significantly whenever you're the one opening the wet food.")
 
 with col2:
-    # Cute Black Cat
-    st.image("[attachment_2](attachment)", width=120)
+    # Black Cat (Noto Emoji)
+    st.image("https://fonts.gstatic.com/s/e/notoemoji/latest/1f408_200d_1f311/512.png", width=100)
     st.subheader("Meemee")
     st.write("🐾 **Loweus: Cozy**")
     st.caption("Rating: 12/10. Claims your legs as her permanent snuggle territory. No movement allowed.")
 
 with col3:
-    # Cute Baby Girl
-    st.image("[attachment_1](attachment)", width=120)
+    # Baby Girl (Noto Emoji)
+    st.image("https://fonts.gstatic.com/s/e/notoemoji/latest/1f467/512.png", width=100)
     st.subheader("Manya")
     st.write("🍼 **Loweus: Peak**")
     st.caption("Rating: Infinite. Especially loves your various different 'Hi-Fi's' and thinks you're the coolest Appa.")
