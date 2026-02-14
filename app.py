@@ -50,8 +50,6 @@ with st.expander("Click here for your Valentine's Surprise"):
     st.info("Code: BEST-HUSBAND-2026")
 
 st.caption("Built with ❤️ by Sneha")
-
-st.title("❤️ Happy Valentine's Day, Adithya!")
 st.subheader("A personalized gift from the whole crew.")
 
 # --- THE "OUR LOWEUS RATING" SECTION ---
@@ -69,3 +67,5 @@ with col1:
 
 with col2:
     st.image("https://img.icons8.com/color/96/black-cat.png")
+    st.subheader("Meemee")
+    
