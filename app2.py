@@ -45,7 +45,8 @@ reasons = [
     "Simply because you're my favorite person to explore national parks with.",
     "How you somehow always know which vegetarian snack I'm craving.",
     "The way you support my AI/ML ideas, even the wild ones.",
-    "Because you make every day in Mountain View feel like an adventure."
+    "Because you make every day in Mountain View feel like an adventure.",
+    "The fact that you appreciate my 'Loweu' and all our internal jokes."
 ]
 
 if st.button("Generate a Reason"):
@@ -67,23 +68,25 @@ st.write("Measuring the levels of extreme love from your favorite housemates:")
 
 col1, col2, col3 = st.columns(3)
 
+# Embedding SVG code directly for 100% reliability
+orange_cat_svg = '<svg viewBox="0 0 24 24" width="80" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c-4.97 0-9 4.03-9 9 0 4.17 2.84 7.67 6.69 8.69L12 22l2.31-2.31C18.16 18.67 21 15.17 21 11c0-4.97-4.03-9-9-9zm0 2c3.87 0 7 3.13 7 7 0 3.25-2.22 5.98-5.21 6.78L12 19.57l-1.79-1.79C7.22 16.98 5 14.25 5 11c0-3.87 3.13-7 7-7z" fill="#FF8C00"/></svg>'
+black_cat_svg = '<svg viewBox="0 0 24 24" width="80" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c-4.97 0-9 4.03-9 9 0 4.17 2.84 7.67 6.69 8.69L12 22l2.31-2.31C18.16 18.67 21 15.17 21 11c0-4.97-4.03-9-9-9zm0 2c3.87 0 7 3.13 7 7 0 3.25-2.22 5.98-5.21 6.78L12 19.57l-1.79-1.79C7.22 16.98 5 14.25 5 11c0-3.87 3.13-7 7-7z" fill="#000000"/></svg>'
+baby_svg = '<svg viewBox="0 0 24 24" width="80" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" fill="#FFDBAC"/><path d="M12 14c-1.5 0-3-.5-3-1.5S10.5 11 12 11s3 .5 3 1.5-1.5 1.5-3 1.5z" fill="#E91E63"/></svg>'
+
 with col1:
-    # Orange Cat SVG
-    st.image("https://www.svgrepo.com/show/404909/cat-face.svg", width=80) 
+    st.write(orange_cat_svg, unsafe_allow_html=True)
     st.subheader("Pilli")
     st.write("🐾 **Loweus: Conditional**")
     st.caption("Rating: 7/10. You are technically the secondary human, but his Loweu spikes significantly whenever you're the one opening the wet food.")
 
 with col2:
-    # Black Cat SVG 
-    st.image("https://www.svgrepo.com/show/404910/cat-face.svg", width=80)
+    st.write(black_cat_svg, unsafe_allow_html=True)
     st.subheader("Meemee")
     st.write("🐾 **Loweus: Cozy**")
     st.caption("Rating: 12/10. Claims your legs as her permanent snuggle territory. No movement allowed.")
 
 with col3:
-    # Baby/Manya SVG
-    st.image("https://www.svgrepo.com/show/404769/baby-medium-skin-tone.svg", width=80)
+    st.write(baby_svg, unsafe_allow_html=True)
     st.subheader("Manya")
     st.write("🍼 **Loweus: Peak**")
     st.caption("Rating: Infinite. Especially loves your various different 'Hi-Fi's' and thinks you're the coolest Appa.")
